@@ -6,6 +6,9 @@ $ min_{x, y} {prod_{i=1}^p  (y_i); y = Cx+d, Ax>=b, x,y>=0}  $
 
 For more information, please refer to [1]. 
 
+
+In order to use this package you need to have JuMP and CPELX installed.
+
 This package provides a function called LMMPSolver with four main arguments A, b, C, d which are the same matrices and vectors in the problem. For example:
 
 LMMPSolver(A,b,C,d)
