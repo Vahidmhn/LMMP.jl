@@ -1,5 +1,9 @@
 module LMMP
 
-# package code goes here
+    using CPLEX
+    using JuMP
+    export LMMPSolver
+    include("Types.jl")
+    include("Functions.jl")
 
-end # module
+end

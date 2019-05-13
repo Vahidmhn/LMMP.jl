@@ -6,4 +6,10 @@ else
 end
 
 # write your own tests here
-@test 1 == 2
+C = trunc.(Int,readdlm("C.txt"));
+A = trunc.(Int,readdlm("A.txt"));
+b = trunc.(Int,readdlm("b.txt"));
+d = trunc.(Int,readdlm("d.txt"));
+
+temp = LMMPSolver(A,b,C,d,XLB = zeros(400),XUB = ones(400))
+@test temp[1] == 6256.816326530623
